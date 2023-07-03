@@ -40,7 +40,7 @@
                     </button>
                 </div>
                 <!-- ---BURGER---------- -->
-                <div class="burger-meny" data-menu>
+                <div class="burger-meny is-hidden" data-menu>
                     <div>
                         <button class="close-burger-btn" type="button" data-menu-close><svg class="modal-btn-svg" width="8" height="8">
                             <use href="./images/icons.svg#icon-krest"></use>
@@ -51,46 +51,48 @@
                             <li class="burger-item"><a class="header-link link" href="">Contacts</a></li>
                         </ul>
                     </div>
-                    <address class="burger-adress adress">
-                        <ul class="burger-adress-list list" >
-                            <li class="burger-adress-item">
-                                <a class="burger-tell-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <div class="burger-wrap">
+                        <address class="burger-adress adress">
+                            <ul class="burger-adress-list list" >
+                                <li class="burger-adress-item">
+                                    <a class="burger-tell-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                                </li>
+                                <li class="burger-adress-item">
+                                    <a class="burger-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <ul class="team-icon list burger-soc">
+                            <li class="icon-item">
+                                <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="icon-soc" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="burger-adress-item">
-                                <a class="burger-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <li class="icon-item">
+                                <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="icon-soc" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-item">
+                                <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="icon-soc" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-item">
+                                <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="icon-soc" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
-                    </address>
-                    <ul class="team-icon list burger-soc">
-                        <li class="icon-item">
-                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="icon-soc" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-item">
-                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="icon-soc" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-item">
-                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="icon-soc" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-item">
-                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="icon-soc" width="16" height="16">
-                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </header>
             
@@ -341,7 +343,7 @@
 
                     <!-- Customers -->
                     <section class="section customers">
-                        <div class="container">
+                        <div class="customers-container container">
                             <h2 class="customers-title">Customers</h2>
                             <ul class="customers-list list">
                                 <li class="customers-item">
