@@ -708,6 +708,7 @@ img{
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity var(--transition), visibility var(--transition);
+    overflow-y: scroll;
    
 }
 .modal{
@@ -715,7 +716,8 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
-    width: 100%;
+    max-width: 408px;
+    width: calc((100% - 30px));
     min-height: 100%;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -723,12 +725,9 @@ img{
     transition: transform var(--transition);
     background: #FFFFFF;
     padding: 72px 24px 24px 24px;
-    overflow-y: scroll;
+   
 }
-.modal-form{
-    max-width: 408px;
-    width: calc((100% - 30px));
-}
+
 .is-hidden{
      opacity: 0;
      visibility: hidden;
@@ -770,15 +769,15 @@ img{
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     color: var(--title-color);
     margin-bottom: 16px;
 }
 .modal-field{
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-bottom: 8px;
+    width: 100%;
 }
 
 .form-input{
@@ -825,7 +824,7 @@ img{
     margin-bottom: 16px;
 }
 .form-textarea{
-    width: 360px;
+    width: 100%;
     height: 120px;
     border-radius: 4px;
     padding: 8px 16px;
@@ -1005,11 +1004,15 @@ img{
 }
 
 @media screen and (max-width: 427px) {
-.burger-tell-link{
-    font-size: 24px;
+
+    .burger-tell-link{
+        font-size: 24px;
+    }
+   
+  
 }
 
-    }
+    
 
 @media screen and (min-width: 768px) {
     .container {
