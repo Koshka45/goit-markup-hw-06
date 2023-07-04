@@ -718,7 +718,7 @@ img{
     transform: translate(-50%, -50%) scaleY(1);
     max-width: 408px;
     width: calc((100% - 30px));
-    min-height: 100%;
+    min-height: 584px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1181,6 +1181,9 @@ img{
     .footer-social{
         align-items: unset;
     }
+    .footer-button{
+        width: unset;
+    }
 
     /* ----PORTFOLIO----- */
     .section-top{
@@ -1213,6 +1216,11 @@ img{
     }
     .header-list{
         margin-left: 76px;
+    }
+    .adress-link{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
     }
       
     /* ---HERO---- */
