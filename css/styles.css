@@ -637,9 +637,10 @@ img{
 
 .card-set{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+    /* row-gap: 48px;
+    column-gap: 24px; */
 }
 .card-wrap{
     position:relative;
@@ -666,7 +667,7 @@ img{
 }
 
 .card{
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
 
 }
 .banking-link{
@@ -681,6 +682,7 @@ img{
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: none;
+    margin-bottom: 48px;
 }
 
 .banking-text{
@@ -692,13 +694,13 @@ img{
     margin-bottom: 8px;
 }
 
-
 .banking-desc{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
 }
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -1195,7 +1197,23 @@ img{
         gap: 24px;
         margin-bottom: 64px;
     }
+    .filters-list{
+        flex-wrap: nowrap;
+    }
     
+    .card-set{
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .banking-item{
+        width: calc((100% - 24px) / 2);
+    
+    }
+    .banking-add{
+        margin-bottom: 96px;
+    }
+
     }
     
     
@@ -1305,6 +1323,11 @@ img{
         align-items: unset;
         margin-right: 80px;
        
+    }
+    /* -----PORTFOLIO------- */
+    .banking-item{
+        width: calc((100% - 48px) / 3);
+    
     }
 }
     

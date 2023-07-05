@@ -23,7 +23,7 @@
                     <li class="header-item"><a class="header-link link" href="">Contacts</a></li>
                 </ul>
                 </nav>
-                <address class="adress">
+                <address class="header-adress adress">
                     <ul class="adress-list list" >
                         <li class="adress-item">
                             <a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -33,6 +33,66 @@
                         </li>
                     </ul>
                 </address>
+                <button class="open-burger-btn" type="button" data-menu-open>
+                    <svg class="burger-btn-svg" width="32" height="22">
+                        <use href="./images/icons.svg#icon-icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <!-- ------BURGER------- -->
+            <div class="burger-meny is-hidden" data-menu>
+                <div>
+                    <button class="close-burger-btn" type="button" data-menu-close><svg class="modal-btn-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-krest"></use>
+                    </svg></button>
+                    <ul class="burger-list list">
+                        <li class="burger-item"><a class="header-link link " href="./index.html"> Studio</a></li>
+                        <li class="burger-item"><a class="header-link link activ mob-current" href="./portfolio.html">Portfolio</a></li>
+                        <li class="burger-item"><a class="header-link link" href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="burger-wrap">
+                    <address class="burger-adress adress">
+                        <ul class="burger-adress-list list" >
+                            <li class="burger-adress-item">
+                                <a class="burger-tell-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="burger-adress-item">
+                                <a class="burger-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="team-icon list burger-soc">
+                        <li class="icon-item">
+                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                <svg class="icon-soc" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                <svg class="icon-soc" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                <svg class="icon-soc" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="icon-link link" href="" target="_blank" rel="noopener no-referrer">
+                                <svg class="icon-soc" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
     
@@ -225,6 +285,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
    
 </body>
 </html>
